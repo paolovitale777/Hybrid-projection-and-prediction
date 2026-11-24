@@ -1,0 +1,3 @@
+population,trait,Dent_n,Dent_spearman,Dent_top10_overlap,Dent_best_A,Dent_best_AD,Flint_n,Flint_spearman,Flint_top10_overlap,Flint_best_A,Flint_best_AD
+Maize,GY,123,0.9994002399040386,0.9230769230769231,3607,3607,86,0.9994905420066983,1.0,3615,3615
+Maize,GM,123,0.9995679147695762,0.9230769230769231,559,559,86,0.999094296900797,1.0,341,341
