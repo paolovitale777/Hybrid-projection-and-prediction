@@ -22,10 +22,10 @@ The breeding-programme simulations (Figure 3) are in a separate repository:
 |---|---|---|
 | `scripts/00_prepare_winter_wheat.py` | parental gametic probabilities from the Dryad SNP table | input |
 | `scripts/00_prepare_rice.R` | rice phenotypes and a 10,000-SNP parental subset | input |
-| `scripts/01_projection.py` | projection ratios, permutation nulls | Table 1, Figure 3 |
+| `scripts/01_projection.py` | projection ratios, permutation nulls | Table 1, Figure 2 |
 | `scripts/02_random_cv.py` | A, D and AD models, random 70/30 cross-validation, selection comparison, parental rankings | Tables 2 and 3 |
-| `scripts/03_parent_cv.py` | parent-structured validation (both, one or neither parent tested) | Supplementary Table S4 |
-| `scripts/04_figure3.py` | figure of the permutation nulls | Figure 3 |
+| `scripts/03_parent_cv.py` | parent-structured validation (both, one or neither parent tested) | Supplementary Table S1 |
+| `scripts/04_figure3.py` | figure of the permutation nulls | Figure 2 |
 | `R/projection.R` | projection ratio and permutation test in R | Supplementary Material C9 |
 
 All functions are in `hybridproj/core.py`; the data loaders are in `hybridproj/data.py`.
@@ -40,10 +40,10 @@ the centered parental main-effect (GCA-contrast) space defined by the identities
 tr(P K)/tr(K) is compared with 1,000 permutations of the hybrid labels relative to the fixed parental design.
 Spring wheat uses Years 1 and 2 combined (1,352 hybrid-year records).
 
-**Prediction (Tables 2 and 3, Supplementary Table S4).** Additive (A), dominance (D) and additive–dominance (AD)
+**Prediction (Tables 2 and 3, Supplementary Table S1).** Additive (A), dominance (D) and additive–dominance (AD)
 genomic models with kernels from the centered features, scaled to unit mean diagonal; variance ratios by REML
 within each training set; held-out hybrids predicted by BLUP. Only hybrid phenotypes are used for training.
-Random validation uses the 100 partitions in `partitions/` (spring wheat: `data/spring_wheat/`).
+Random validation uses the 100 partitions in `partitions/`.
 
 
 ## Running
