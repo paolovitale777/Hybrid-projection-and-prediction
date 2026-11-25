@@ -45,26 +45,6 @@ genomic models with kernels from the centered features, scaled to unit mean diag
 within each training set; held-out hybrids predicted by BLUP. Only hybrid phenotypes are used for training.
 Random validation uses the 100 partitions in `partitions/` (spring wheat: `data/spring_wheat/`).
 
-## Data
-
-Raw data are not redistributed, except for the spring wheat files that were reconstructed for this study.
-Place the files as follows:
-
-```
-data/winter_wheat/   Yield within Exp I.txt
-                     Additive relationship matrix for Exp I.txt      (unzip from the repository)
-                     Dominance relationship matrix for Exp I.txt     (unzip from the repository)
-                         from https://github.com/ysz98/Genomic-prediction-of-hybrid-wheat
-                     Supplementary_Tables.xlsx
-                         from Dryad, https://doi.org/10.5061/dryad.461nc (90k SNPs of the 135 parents)
-data/maize/          genetics.114.165860-6.xls, -7.xls, -9.xls
-                         supplementary files of Technow et al. (2014), Genetics 197, 1343–1355
-data/rice/           genotype.Rdata, phe.Rdata
-                         data of Xu et al. (2018) and Wang et al. (2017)   [ADD LINK]
-data/spring_wheat/   included: reconstructed cohorts (Years 1 and 2), the 100 partitions per year,
-                     and the 0/1/2 SNP genotypes (9,873 SNPs) of the 389 parents
-partitions/          included: the 100 random 70/30 partitions of maize, rice and winter wheat
-```
 
 ## Running
 
