@@ -13,7 +13,7 @@ Four published hybrid populations are analysed with one pipeline:
 | Maize | Technow et al. (2014) | 1,254 | 123 Dent × 86 Flint |
 | Rice | Xu et al. (2018); Wang et al. (2017) | 575 | 115 inbred × 5 male-sterile |
 
-The breeding-programme simulations (Figure 2) are in a separate repository:
+The breeding-programme simulations (Figure 3) are in a separate repository:
 <https://github.com/paolovitale777/Hybrid-programs-simulations>.
 
 ## What the code does
@@ -62,21 +62,6 @@ python scripts/04_figure3.py
 
 Outputs go to `results/`; the files from our run are included there.
 
-## Expected results
-
-| | Spring wheat | Winter wheat | Maize | Rice |
-|---|---|---|---|---|
-| Dominance projection ratio | 0.674 | 0.591 | 0.832 | 0.787 |
-| Null mean | 0.292 | 0.083 | 0.165 | 0.206 |
-| COR, A / AD (grain yield) | 0.541 / 0.538 (Yr 1); 0.596 / 0.597 (Yr 2) | 0.754 / 0.777 | 0.868 / 0.872 | 0.389 / 0.387 |
-
-Spring wheat, winter wheat and maize reproduce the manuscript exactly. Rice depends on the random 10,000-SNP
-parental subset; the subset drawn by `00_prepare_rice.R` reproduces the published rice values to within about
-0.005 (projection 0.787 versus 0.790).
-
-For winter wheat, `01_projection.py` also projects the dominance relationship matrix supplied with the source study
-(0.112) and the same genotypic coding rebuilt from the SNPs (0.122). That coding is constructed to be orthogonal to
-additive effects, which is why its ratio is much lower than with the heterozygosity coding used for all populations.
 
 ## Citation
 
